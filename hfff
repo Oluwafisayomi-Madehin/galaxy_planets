@@ -1,0 +1,22 @@
+randomNumber = random.randint(1000, 2500)
+inputedNumber = input("Guess a number: ")
+inputedNumber = int(inputedNumber)
+
+while randomNumber != inputedNumber:
+    inputedNumber = int(input("Guess a number: "))
+    if inputedNumber <= 1000:
+        print("Too little!")
+        inputedNumber = int(input("Guess a number: "))
+
+    elif inputedNumber > 1000 & inputedNumber < 2500:
+        if inputedNumber <= randomNumber:
+            print("You lose!")
+
+        elif inputedNumber < randomNumber:
+            print("You win!")
+
+        print(planets[int(userPlanet)] + " prepared " + str(randomNumber) + "!")
+
+    else:
+        print("Too large!")
+        inputedNumber = int(input("Guess a number: "))
