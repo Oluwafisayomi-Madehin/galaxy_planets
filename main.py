@@ -20,7 +20,7 @@ while (int(userPlanet) < 0 or int(userPlanet) > 3) or userPlanet.isnumeric() == 
 
     if userPlanet.isnumeric() == False:
         userPlanet = "99"
-        print("User planet can only be 0,1,2,3!")
+        print("User planet can only be 0,1,2 or 3!")
 else:
     userPlanet = int(userPlanet)
     print("Welcome to " + planets[userPlanet])
